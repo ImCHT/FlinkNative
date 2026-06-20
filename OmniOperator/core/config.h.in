@@ -1,0 +1,7 @@
+#cmakedefine DEBUG
+#cmakedefine TRACE
+#cmakedefine DEBUG_OPERATOR
+#cmakedefine DEBUG_VECTOR
+#cmakedefine DEBUG_LLVM
+#cmakedefine COVERAGE
+#cmakedefine ENABLE_BENCHMARK
