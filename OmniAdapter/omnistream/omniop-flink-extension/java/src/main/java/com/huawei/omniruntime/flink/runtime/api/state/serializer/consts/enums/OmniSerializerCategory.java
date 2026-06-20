@@ -1,0 +1,21 @@
+package com.huawei.omniruntime.flink.runtime.api.state.serializer.consts.enums;
+
+/**
+ * OmniSerializerCategory
+ *
+ */
+
+public enum OmniSerializerCategory {
+    BASIC,
+    DATE,
+    LIST,
+    MAP,
+    TUPLE,
+    POJO,
+    VOID_NAMESPACE,
+    TIMER,
+    PRIMITIVE_ARRAY,
+    ROW,
+    BINARY_ROW,
+    UNKNOWN
+}

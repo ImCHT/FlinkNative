@@ -1,0 +1,401 @@
+{
+  "Calc": {
+    "is_supported": true,
+    "supported_list": [
+      "BOOLEAN",
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  },
+  "GroupAggregate": {
+    "is_supported": true,
+    "supported_list": [
+      "INT",
+      "BIGINT",
+      "VARCHAR(2147483647)"
+    ],
+    "not_supported_list": []
+  },
+  "LocalGroupAggregate": {
+    "is_supported": true,
+    "supported_list": [
+      "INT",
+      "BIGINT",
+      "VARCHAR(2147483647)"
+    ],
+    "not_supported_list": []
+  },
+  "GlobalGroupAggregate": {
+    "is_supported": true,
+    "supported_list": [
+      "INT",
+      "BIGINT",
+      "VARCHAR(2147483647)"
+    ],
+    "not_supported_list": []
+  },
+  "IncrementalGroupAggregate": {
+    "is_supported": true,
+    "supported_list": [
+      "INT",
+      "BIGINT",
+      "VARCHAR(2147483647)"
+    ],
+    "not_supported_list": []
+  },
+  "Join": {
+    "is_supported": true,
+    "supported_list": [
+      "BOOLEAN",
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  },
+  "LookupJoin": {
+    "is_supported": true,
+    "supported_list": [
+      "BOOLEAN",
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  },
+  "WindowAggregate": {
+    "is_supported": true,
+    "supported_list": [
+      "BOOLEAN",
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  },
+  "WindowJoin": {
+    "is_supported": true,
+    "supported_list": [
+      "BOOLEAN",
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  },
+  "GroupWindowAggregate": {
+    "is_supported": true,
+    "supported_list": [
+      "BOOLEAN",
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  },
+  "Deduplicate": {
+    "is_supported": true,
+    "supported_list": [
+      "BOOLEAN",
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  },
+  "Expand": {
+    "is_supported": true,
+    "supported_list": [
+      "BOOLEAN",
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  },
+  "GlobalWindowAggregate": {
+    "is_supported": true,
+    "supported_list": [
+      "BOOLEAN",
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  },
+  "LocalWindowAggregate": {
+    "is_supported": true,
+    "supported_list": [
+      "BOOLEAN",
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  },
+  "WatermarkAssigner": {
+    "is_supported": true,
+    "supported_list": [
+      "BOOLEAN",
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  },
+  "Rank": {
+    "is_supported": true,
+    "supported_list": [
+      "BOOLEAN",
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  },
+  "StreamRecordTimestampInserter": {
+    "is_supported": true,
+    "supported_list": [
+      "BOOLEAN",
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  },
+  "ConstraintEnforcer": {
+    "is_supported": true,
+    "supported_list": [
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP_WITHOUT_TIME_ZONE(0)",
+      "TIMESTAMP_WITHOUT_TIME_ZONE(1)",
+      "TIMESTAMP_WITHOUT_TIME_ZONE(2)",
+      "TIMESTAMP_WITHOUT_TIME_ZONE(3)",
+      "TIMESTAMP_WITH_LOCAL_TIME_ZONE(3)"
+    ],
+    "not_supported_list": []
+  },
+  "Sink": {
+    "is_supported": true,
+    "supported_list": [
+      "BOOLEAN",
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  },
+  "Csv Source": {
+    "is_supported": true,
+    "supported_list": [],
+    "not_supported_list": []
+  },
+  "KafKa Source": {
+    "is_supported": true,
+    "supported_list": [
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(0)",
+      "TIMESTAMP_LTZ(1)",
+      "TIMESTAMP_LTZ(2)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  },
+  "Kafka Sink": {
+    "is_supported": true,
+    "supported_list": [
+      "BOOLEAN",
+      "INT",
+      "STRING",
+      "BIGINT",
+      "DECIMAL64",
+      "DECIMAL128",
+      "VARCHAR",
+      "VARCHAR(9)",
+      "VARCHAR(2147483647)",
+      "VARCHAR(2000)",
+      "TIMESTAMP(0)",
+      "TIMESTAMP(1)",
+      "TIMESTAMP(2)",
+      "TIMESTAMP(3)",
+      "TIMESTAMP_LTZ(0)",
+      "TIMESTAMP_LTZ(1)",
+      "TIMESTAMP_LTZ(2)",
+      "TIMESTAMP_LTZ(3)"
+    ],
+    "not_supported_list": []
+  }
+}
