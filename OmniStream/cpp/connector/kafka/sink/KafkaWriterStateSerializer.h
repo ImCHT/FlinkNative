@@ -1,0 +1,29 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2025. All rights reserved.
+ * You can use this software according to the terms and conditions of the Mulan PSL v2.
+ * You may obtain a copy of Mulan PSL v2 at:
+ *          http://license.coscl.org.cn/MulanPSL2
+ * THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+ * MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+ * See the Mulan PSL v2 for more details.
+ */
+
+#ifndef FLINK_BENCHMARK_KAFKAWRITERSTATESERIALIZER_H
+#define FLINK_BENCHMARK_KAFKAWRITERSTATESERIALIZER_H
+
+#include <string>
+#include <vector>
+#include <stdexcept>
+
+#include "KafkaWriterState.h"
+#include "core/io/SimpleVersionedSerializer.h"
+
+class KafkaWriterStateSerializer : public SimpleVersionedSerializer<KafkaWriterState> {
+public:
+    int getVersion() const override;
+    std::vector<uint8_t> serialize(const KafkaWriterState& obj) override;
+    KafkaWriterState* deserialize(int version, std::vector<uint8_t>& serialized) override;
+};
+
+#endif // FLINK_BENCHMARK_KAFKAWRITERSTATESERIALIZER_H

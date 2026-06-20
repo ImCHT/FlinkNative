@@ -1,0 +1,42 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2025. All rights reserved.
+ * You can use this software according to the terms and conditions of the Mulan PSL v2.
+ * You may obtain a copy of Mulan PSL v2 at:
+ *          http://license.coscl.org.cn/MulanPSL2
+ * THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+ * MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+ * See the Mulan PSL v2 for more details.
+ */
+
+#ifndef OMNISTREAM_DELAYEDWORKQUEUE_H
+#define OMNISTREAM_DELAYEDWORKQUEUE_H
+
+#include <queue>
+#include "ScheduledFutureTask.h"
+
+class DelayedWorkQueue  {
+public:
+    void Offer(ScheduledFutureTask* task);
+
+    ScheduledFutureTask* Take();
+
+    void Shutdown();
+
+    void NotifyAll();
+
+private:
+    struct Comparator {
+        bool operator()(ScheduledFutureTask* left, ScheduledFutureTask* right) {
+            // *left < *right means the right ScheduledFutureTask has higher priority (earlier execution time)
+            return *left < *right;
+        }
+    };
+
+    std::mutex queueMutex;
+    std::condition_variable condition;
+    std::priority_queue<ScheduledFutureTask*, std::vector<ScheduledFutureTask*>, Comparator> queue;
+    bool stop = false;
+};
+
+#endif // OMNISTREAM_DELAYEDWORKQUEUE_H

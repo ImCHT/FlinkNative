@@ -1,0 +1,52 @@
+/*
+ * Copyright (c) Huawei Technologies Co., Ltd. 2025. All rights reserved.
+ * You can use this software according to the terms and conditions of the Mulan PSL v2.
+ * You may obtain a copy of Mulan PSL v2 at:
+ *          http://license.coscl.org.cn/MulanPSL2
+ * THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT,
+ * MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
+ * See the Mulan PSL v2 for more details.
+ */
+
+#ifndef OMNISTREAM_JOINTUPLESERIALIZER2_H
+#define OMNISTREAM_JOINTUPLESERIALIZER2_H
+
+#include "core/typeinfo/typeconstants.h"
+
+#include "TypeSerializerSingleton.h"
+
+
+class JoinTupleSerializer2 : public TypeSerializerSingleton {
+public:
+    JoinTupleSerializer2() {}
+
+    ~JoinTupleSerializer2() override = default;
+
+    void *deserialize(DataInputView &source) override;
+
+    void serialize(void *record, DataOutputSerializer &target) override;
+
+    const char* getName() const override { return "JoinTupleSerializer2"; }
+
+    virtual TypeSerializer* duplicate() { return JoinTupleSerializer2::INSTANCE; }
+
+    virtual std::shared_ptr<TypeSerializerSnapshot> snapshotConfiguration(){
+        // TODO impl build serializer snapshot
+        NOT_IMPL_EXCEPTION
+    }
+
+    BackendDataType getBackendId() const override { return BackendDataType::TUPLE_INT32_INT32_INT64;};
+
+    std::string toJson() override {
+        SerializerJsonInfo typeJson = {SerializerType::POJO, TYPE_NAME_JOIN_TUPLE2_CLASS};
+        return typeJson.toJson();
+    }
+
+    void setSubBufferReusable(bool bufferReusable_) override {}
+
+    static JoinTupleSerializer2* INSTANCE;
+};
+
+
+#endif // OMNISTREAM_JOINTUPLESERIALIZER_H
